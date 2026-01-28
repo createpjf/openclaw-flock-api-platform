@@ -11,7 +11,7 @@ A Moltbot plugin that integrates [FLock API Platform](https://docs.flock.io/floc
 ## Installation
 
 ```bash
-moltbot plugins install @flock-io/moltbot-plugin-flock
+moltbot plugins install moltbot-plugin-flock
 ```
 
 Or if installing from a local path:

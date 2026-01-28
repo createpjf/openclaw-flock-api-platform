@@ -1,5 +1,5 @@
 {
-  "name": "@flock-io/moltbot-plugin-flock",
+  "name": "moltbot-plugin-flock",
   "version": "0.1.0",
   "type": "module",
   "description": "FLock API Platform provider plugin for Moltbot",
