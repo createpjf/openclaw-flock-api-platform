@@ -163,13 +163,33 @@ moltbot agent --model flock/qwen3-30b-a3b-instruct-2507 --message "Hello! Tell m
 
 FLock provides access to various models. Use the format `flock/<model-id>`:
 
-| Model ID | Description |
-|----------|-------------|
-| `qwen3-30b-a3b-instruct-2507` | Qwen 3 30B Instruct |
-| `qwen3-235b-a22b-instruct-2507` | Qwen 3 235B Instruct |
-| *(more models available)* | Check [FLock API Docs](https://docs.flock.io/flock-products/api-platform/api-endpoint) |
+### 🧠 Reasoning / Thinking Models
 
-> **Tip:** Model availability may vary. Check the [FLock API documentation](https://docs.flock.io/flock-products/api-platform/api-endpoint) for the latest list.
+| Model ID | Input Price | Output Price |
+|----------|-------------|--------------|
+| `qwen3-235b-a22b-thinking-2507` | $0.230 / 1M tokens | $2.300 / 1M tokens |
+| `qwen3-235b-a22b-thinking-qwfin` | $0.230 / 1M tokens | $2.300 / 1M tokens |
+| `kimi-k2-thinking` | $0.600 / 1M tokens | $2.500 / 1M tokens |
+
+### 💬 Instruct / Chat Models
+
+| Model ID | Input Price | Output Price |
+|----------|-------------|--------------|
+| `qwen3-30b-a3b-instruct-2507` | $0.200 / 1M tokens | $0.800 / 1M tokens |
+| `qwen3-235b-a22b-instruct-2507` | $0.700 / 1M tokens | $2.800 / 1M tokens |
+| `qwen3-30b-a3b-instruct-qmxai` | $0.200 / 1M tokens | $0.800 / 1M tokens |
+| `qwen3-30b-a3b-instruct-coding` | $0.200 / 1M tokens | $0.800 / 1M tokens |
+| `qwen3-30b-a3b-instruct-qmini` | $0.200 / 1M tokens | $0.800 / 1M tokens |
+
+### 🚀 Other Models
+
+| Model ID | Input Price | Output Price |
+|----------|-------------|--------------|
+| `deepseek-v3.2` | $0.280 / 1M tokens | $0.420 / 1M tokens |
+| `deepseek-v3.2-dsikh` | $0.280 / 1M tokens | $0.420 / 1M tokens |
+| `minimax-m2.1` | $0.300 / 1M tokens | $1.200 / 1M tokens |
+
+> **💡 Tip:** Model availability and pricing may change. Check [FLock API Platform](https://platform.flock.io) for the latest list.
 
 ---
 
@@ -186,16 +206,36 @@ models:
       baseUrl: https://api.flock.io/v1
       api: openai-completions
       models:
+        # Reasoning models
+        - id: qwen3-235b-a22b-thinking-2507
+          name: Qwen 3 235B Thinking
+          reasoning: true
+          input: [text]
+          contextWindow: 131072
+          maxTokens: 8192
+        - id: kimi-k2-thinking
+          name: Kimi K2 Thinking
+          reasoning: true
+          input: [text]
+          contextWindow: 131072
+          maxTokens: 8192
+        # Instruct models
         - id: qwen3-30b-a3b-instruct-2507
-          name: Qwen 3 30B
+          name: Qwen 3 30B Instruct
           input: [text]
-          contextWindow: 32768
-          maxTokens: 4096
-        - id: qwen3-235b-a22b-instruct-2507
-          name: Qwen 3 235B
+          contextWindow: 131072
+          maxTokens: 8192
+        - id: qwen3-30b-a3b-instruct-coding
+          name: Qwen 3 30B Coding
           input: [text]
-          contextWindow: 32768
-          maxTokens: 4096
+          contextWindow: 131072
+          maxTokens: 8192
+        # DeepSeek
+        - id: deepseek-v3.2
+          name: DeepSeek V3.2
+          input: [text]
+          contextWindow: 131072
+          maxTokens: 8192
 ```
 
 ### Using with Different Channels
