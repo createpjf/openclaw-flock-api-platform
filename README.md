@@ -1,10 +1,24 @@
-# FLock Provider Plugin for Moltbot
+```
+    ███████╗██╗      ██████╗  ██████╗██╗  ██╗    ██╗  ██╗    ███╗   ███╗ ██████╗ ██╗  ████████╗██████╗  ██████╗ ████████╗
+    ██╔════╝██║     ██╔═══██╗██╔════╝██║ ██╔╝    ╚██╗██╔╝    ████╗ ████║██╔═══██╗██║  ╚══██╔══╝██╔══██╗██╔═══██╗╚══██╔══╝
+    █████╗  ██║     ██║   ██║██║     █████╔╝      ╚███╔╝     ██╔████╔██║██║   ██║██║     ██║   ██████╔╝██║   ██║   ██║   
+    ██╔══╝  ██║     ██║   ██║██║     ██╔═██╗      ██╔██╗     ██║╚██╔╝██║██║   ██║██║     ██║   ██╔══██╗██║   ██║   ██║   
+    ██║     ███████╗╚██████╔╝╚██████╗██║  ██╗    ██╔╝ ██╗    ██║ ╚═╝ ██║╚██████╔╝███████╗██║   ██████╔╝╚██████╔╝   ██║   
+    ╚═╝     ╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝    ╚═╝  ╚═╝    ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═════╝  ╚═════╝    ╚═╝   
+    
+    ⚡ Decentralized AI Gateway Provider ⚡           🦞 Your AI, Your Way 🦞
+```
 
-[![npm version](https://img.shields.io/npm/v/moltbot-plugin-flock.svg)](https://www.npmjs.com/package/moltbot-plugin-flock)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub](https://img.shields.io/badge/GitHub-FLock--io%2Fmoltbot--plugin--flock-blue?logo=github)](https://github.com/FLock-io/moltbot-plugin-flock)
+<p align="center">
+  <a href="https://www.npmjs.com/package/moltbot-plugin-flock"><img src="https://img.shields.io/npm/v/moltbot-plugin-flock.svg?style=for-the-badge&logo=npm&logoColor=white&label=npm&color=CB3837" alt="npm version"></a>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/FLock-io/moltbot-plugin-flock"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub"></a>
+  <a href="https://platform.flock.io"><img src="https://img.shields.io/badge/FLock-Platform-6366f1?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyek0xMiAyMGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6Ii8+PC9zdmc+" alt="FLock Platform"></a>
+</p>
 
-> Use [FLock API Platform](https://platform.flock.io) as your AI model gateway in Moltbot/Clawdbot
+<p align="center">
+  <b>🚀 Use FLock API Platform as your AI model gateway in Moltbot/Clawdbot 🚀</b>
+</p>
 
 ---
 
