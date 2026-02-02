@@ -126,11 +126,6 @@ You need an API key from FLock API Platform:
 ### Step 1: Install the Plugin
 
 ```bash
-npm i @openclawd/flock
-```
-
-Or via OpenClaw CLI:
-```bash
 openclaw plugins install @openclawd/flock
 ```
 
@@ -183,38 +178,7 @@ Your API key is now securely stored in OpenClaw's auth profiles.
 
 ---
 
-## Usage
 
-### Option 1: Use FLock Model Directly
-
-Specify a FLock model when running OpenClaw:
-
-```bash
-openclaw agent --model flock/qwen3-30b-a3b-instruct-2507
-```
-
-### Option 2: Set as Default Model
-
-Make a FLock model your default:
-
-```bash
-openclaw config set agents.defaults.model flock/qwen3-30b-a3b-instruct-2507
-```
-
-Then simply run:
-```bash
-openclaw agent
-```
-
-### Option 3: Interactive Chat
-
-Start a chat session with a FLock model:
-
-```bash
-openclaw agent --model flock/qwen3-30b-a3b-instruct-2507 --message "Hello! Tell me about yourself."
-```
-
----
 
 ## Available Models
 
